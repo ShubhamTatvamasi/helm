@@ -1,5 +1,170 @@
 apiVersion: v1
 entries:
+  cwf-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-20T00:26:02.546392912Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's cwf module
+    digest: 81e200b9394ba5242022ad9422bd12f8731ff8c3114a4e69c3f8d53569968e26
+    keywords:
+    - magma
+    - or8cr
+    - cwf-orc8r
+    name: cwf-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/cwf-orc8r-0.2.0/cwf-orc8r-0.2.0.tgz
+    version: 0.2.0
+  fbinternal-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-20T00:26:02.765015452Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's fbinternal module
+    digest: 0b0e9545b954dbf79a18ff54163899e1cf28c3fef32febd7b4ade29de710bfee
+    keywords:
+    - magma
+    - or8cr
+    - fbinternal-orc8r
+    name: fbinternal-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/fbinternal-orc8r-0.2.0/fbinternal-orc8r-0.2.0.tgz
+    version: 0.2.0
+  feg-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-20T00:26:03.053718608Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's feg module
+    digest: 9b7e6158d7891b8a4cfcdb3f459a88f83679dab4817b28309b19cce0cbc8accc
+    keywords:
+    - magma
+    - or8cr
+    - feg-orc8r
+    name: feg-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/feg-orc8r-0.2.1/feg-orc8r-0.2.1.tgz
+    version: 0.2.1
+  lte-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-20T00:26:03.280463938Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's lte module
+    digest: 72511e15d4cb4f6f10c06675f29e5f43b93764b92f7386a449aaa645e8f0ca54
+    keywords:
+    - magma
+    - or8cr
+    - lte-orc8r
+    name: lte-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/lte-orc8r-0.2.1/lte-orc8r-0.2.1.tgz
+    version: 0.2.1
+  nginx:
+  - annotations:
+      artifacthub.io/changes: |
+        - Updated app version to 1.19.6
+      artifacthub.io/images: |
+        - name: nginx
+          image: nginx:1.19.6
+      artifacthub.io/license: MIT
+    apiVersion: v2
+    appVersion: 1.19.6
+    created: "2021-02-20T00:26:03.571758691Z"
+    description: Nginx Helm chart for Kubernetes
+    digest: c0e157d41c997ae058a50370052183ba46c7b1868b20d0bbf10f9269eed72c50
+    home: https://shubhamtatvamasi.com
+    icon: https://img.icons8.com/color/452/nginx.png
+    keywords:
+    - nginx
+    - server
+    - webserver
+    maintainers:
+    - email: shubhamtatvamasi@gmail.com
+      name: Shubham Tatvamasi
+    name: nginx
+    sources:
+    - https://github.com/ShubhamTatvamasi/helm/tree/master/charts/nginx
+    type: application
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/nginx-0.1.12/nginx-0.1.12.tgz
+    version: 0.1.12
+  orc8r:
+  - annotations:
+      artifacthub.io/changes: |
+        - moved orc8rlib to seprate chart
+      artifacthub.io/images: |
+        - name: magmalte
+          image: shubhamtatvamasi/magmalte:v1.4
+        - name: controller
+          image: shubhamtatvamasi/controller:v1.4
+        - name: nginx
+          image: shubhamtatvamasi/nginx:v1.4
+      artifacthub.io/license: BSD-3-Clause
+    apiVersion: v2
+    appVersion: "1.4"
+    created: "2021-02-20T00:26:03.855685753Z"
+    dependencies:
+    - condition: secrets.create
+      name: secrets
+      repository: ""
+      version: 0.1.10
+    - condition: metrics.enabled
+      name: metrics
+      repository: ""
+      version: 1.4.21
+    - condition: nms.enabled
+      name: nms
+      repository: ""
+      version: 0.1.8
+    - condition: logging.enabled
+      name: logging
+      repository: ""
+      version: 0.1.10
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator
+    digest: 166067482114a1fc15ab3ec904ae9fadf7bb269f643872606cbaeb487f1709b1
+    home: https://www.magmacore.org
+    icon: https://avatars.githubusercontent.com/u/66266171
+    keywords:
+    - magma
+    - or8cr
+    - lte
+    - 4g
+    - 5g
+    - 3gpp
+    maintainers:
+    - email: shubhamtatvamasi@gmail.com
+      name: Shubham Tatvamasi
+    name: orc8r
+    sources:
+    - https://github.com/magma/magma
+    type: application
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/orc8r-1.5.12/orc8r-1.5.12.tgz
+    version: 1.5.12
   orc8rlib:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -16,4 +181,24 @@ entries:
     urls:
     - https://github.com/ShubhamTatvamasi/helm/releases/download/orc8rlib-0.1.2/orc8rlib-0.1.2.tgz
     version: 0.1.2
-generated: "2021-02-20T00:22:03.490920518Z"
+  wifi-orc8r:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-02-20T00:26:04.158455792Z"
+    dependencies:
+    - name: orc8rlib
+      repository: https://shubhamtatvamasi.github.io/helm
+      version: 0.1.2
+    description: A Helm chart for magma orchestrator's wifi module
+    digest: 57f38232a99614fe5c89186efda454861f03cf76e6174b0e16dde6a5088d5d71
+    keywords:
+    - magma
+    - or8cr
+    - wifi-orc8r
+    name: wifi-orc8r
+    sources:
+    - https://github.com/magma/magma
+    urls:
+    - https://github.com/ShubhamTatvamasi/helm/releases/download/wifi-orc8r-0.2.0/wifi-orc8r-0.2.0.tgz
+    version: 0.2.0
+generated: "2021-02-20T00:26:04.158462592Z"
