@@ -1,0 +1,6 @@
+dependencies:
+- name: orc8rlib
+  repository: https://shubhamtatvamasi.github.io/helm
+  version: 0.1.2
+digest: sha256:9914bec5850f838cf5852676fbe75c7f3617d445d98f8a5ad241e9ec9d5183f8
+generated: "2021-02-20T05:07:24.542406494+05:30"

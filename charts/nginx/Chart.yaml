@@ -1,0 +1,24 @@
+apiVersion: v2
+name: nginx
+description: Nginx Helm chart for Kubernetes
+type: application
+version: 0.1.12
+appVersion: "1.19.6"
+home: https://shubhamtatvamasi.com
+icon: https://img.icons8.com/color/452/nginx.png
+sources:
+  - https://github.com/ShubhamTatvamasi/helm/tree/master/charts/nginx
+keywords:
+  - nginx
+  - server
+  - webserver
+maintainers:
+  - name: Shubham Tatvamasi
+    email: shubhamtatvamasi@gmail.com
+annotations:
+  artifacthub.io/license: MIT
+  artifacthub.io/images: |
+    - name: nginx
+      image: nginx:1.19.6
+  artifacthub.io/changes: |
+    - Updated app version to 1.19.6

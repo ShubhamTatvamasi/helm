@@ -1,0 +1,52 @@
+apiVersion: v2
+appVersion: "1.4"
+description: A Helm chart for magma orchestrator
+type: application
+name: orc8r
+version: 1.5.12
+engine: gotpl
+home: https://www.magmacore.org
+icon: https://avatars.githubusercontent.com/u/66266171
+sources:
+- https://github.com/magma/magma
+keywords:
+- magma
+- or8cr
+- lte
+- 4g
+- 5g
+- 3gpp
+maintainers:
+- name: Shubham Tatvamasi
+  email: shubhamtatvamasi@gmail.com
+dependencies:
+- name: secrets
+  version: 0.1.10
+  repository: ""
+  condition: secrets.create
+- name: metrics
+  version: 1.4.21
+  repository: ""
+  condition: metrics.enabled
+- name: nms
+  version: 0.1.8
+  repository: ""
+  condition: nms.enabled
+- name: logging
+  version: 0.1.10
+  repository: ""
+  condition: logging.enabled
+- name: orc8rlib
+  version: 0.1.2
+  repository: "https://shubhamtatvamasi.github.io/helm"
+annotations:
+  artifacthub.io/license: BSD-3-Clause
+  artifacthub.io/images: |
+    - name: magmalte
+      image: shubhamtatvamasi/magmalte:v1.4
+    - name: controller
+      image: shubhamtatvamasi/controller:v1.4
+    - name: nginx
+      image: shubhamtatvamasi/nginx:v1.4
+  artifacthub.io/changes: |
+    - moved orc8rlib to seprate chart

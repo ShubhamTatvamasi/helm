@@ -1,0 +1,15 @@
+apiVersion: v2
+appVersion: "1.0"
+dependencies:
+- name: orc8rlib
+  repository: "https://shubhamtatvamasi.github.io/helm"
+  version: 0.1.2
+description: A Helm chart for magma orchestrator's cwf module
+keywords:
+- magma
+- or8cr
+- cwf-orc8r
+name: cwf-orc8r
+sources:
+- https://github.com/magma/magma
+version: 0.2.0
