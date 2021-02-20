@@ -5,6 +5,11 @@
 
 Add helm repo on your list:
 ```bash
-helm repo add s https://shubhamtatvamasi.github.io/helm
+helm repo add shubhamtatvamasi https://shubhamtatvamasi.github.io/helm
 helm repo update
+```
+
+Search all repos:
+```bash
+helm search repo shubhamtatvamasi
 ```
