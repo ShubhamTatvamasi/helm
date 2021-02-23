@@ -26,7 +26,7 @@ jobs:
 
       - name: Add helm repo
         run: |
-          helm repo add s https://shubhamtatvamasi.github.io/helm
+          helm repo add shubhamtatvamasi https://shubhamtatvamasi.github.io/helm
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.2.0
