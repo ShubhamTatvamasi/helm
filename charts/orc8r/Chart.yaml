@@ -3,7 +3,7 @@ appVersion: "1.4"
 description: A Helm chart for magma orchestrator
 type: application
 name: orc8r
-version: 1.5.12
+version: 1.5.13
 engine: gotpl
 home: https://www.magmacore.org
 icon: https://avatars.githubusercontent.com/u/66266171
