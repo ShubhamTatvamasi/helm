@@ -5,12 +5,7 @@
 
 Download helm:
 ```bash
-HELM_VERSION=3.6.3
-HELM_LINUX=helm-v${HELM_VERSION}-linux-amd64.tar.gz
-wget https://get.helm.sh/$HELM_LINUX
-tar -zxvf $HELM_LINUX
-sudo mv linux-amd64/helm /usr/local/bin/helm
-rm -r $HELM_LINUX linux-amd64
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 ```
 
 Add helm repo on your list:
