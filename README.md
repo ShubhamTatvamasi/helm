@@ -18,3 +18,8 @@ Search all repos:
 ```bash
 helm search repo shubhamtatvamasi
 ```
+
+Create new helm chart:
+```bash
+helm create my-chart
+```
