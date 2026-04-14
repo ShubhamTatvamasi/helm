@@ -18,6 +18,10 @@ tar -C /tmp -xzf helm-v4.1.4-linux-amd64.tar.gz
 sudo mv /tmp/linux-amd64/helm /usr/local/bin
 ```
 
+```bash
+helm version --short
+```
+
 ---
 
 Download helm:
