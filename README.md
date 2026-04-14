@@ -11,11 +11,11 @@ wget https://get.helm.sh/helm-v4.1.4-linux-amd64.tar.gz
 ```
 
 ```bash
-tar -C /tmp/helm -xzf helm-v4.1.4-linux-amd64.tar.gz
+tar -C /tmp -xzf helm-v4.1.4-linux-amd64.tar.gz
 ```
 
 ```bash
-sudo mv /tmp/helm/linux-amd64/helm  /usr/local/bin
+sudo mv /tmp/linux-amd64/helm  /usr/local/bin
 ```
 
 ---
