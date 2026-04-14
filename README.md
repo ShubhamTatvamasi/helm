@@ -15,7 +15,7 @@ tar -C /tmp -xzf helm-v4.1.4-linux-amd64.tar.gz
 ```
 
 ```bash
-sudo mv /tmp/linux-amd64/helm  /usr/local/bin
+sudo mv /tmp/linux-amd64/helm /usr/local/bin
 ```
 
 ---
