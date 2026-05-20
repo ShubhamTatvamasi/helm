@@ -5,6 +5,12 @@
 
 ### Helm 4
 
+```bash
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4 | bash
+```
+
+---
+
 Download helm:
 ```bash
 wget https://get.helm.sh/helm-v4.1.4-linux-amd64.tar.gz
