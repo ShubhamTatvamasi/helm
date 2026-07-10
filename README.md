@@ -3,6 +3,11 @@
 [![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/shubhamtatvamasi)](https://artifacthub.io/packages/search?repo=shubhamtatvamasi)
 [![Release Charts](https://github.com/ShubhamTatvamasi/helm/workflows/Release%20Charts/badge.svg)](https://github.com/ShubhamTatvamasi/helm/actions)
 
+Check values
+```bash
+helm get values flux-operator
+```
+
 ### Helm 4
 
 ```bash
